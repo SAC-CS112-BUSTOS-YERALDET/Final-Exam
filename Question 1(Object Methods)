@@ -1,4 +1,6 @@
+///////////////////////////////////////////////////////////////////////////////////////////
 // Object.java
+///////////////////////////////////////////////////////////////////////////////////////////
 
 public class Object 
 {
@@ -39,3 +41,98 @@ public class Object
 
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////
+// Bird.java
+///////////////////////////////////////////////////////////////////////////////////////////
+public class Bird extends Object {
+    
+    public Bird()
+    {
+        super();
+    }
+    
+    public void PrintStatus()
+    {
+        System.out.print("Bird\n");
+        System.out.printf("Distance Traveled: %f", super.distance);
+        System.out.printf("\nAltitude: %f\n\n", super.altitude);
+    }
+    
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Airplane.java
+///////////////////////////////////////////////////////////////////////////////////////////
+
+public class Airplane extends Object 
+{
+    public Airplane()
+    {
+        super();
+    }
+    
+    public void PrintStatus()
+    {
+        System.out.print("AirPlane\n");
+        System.out.printf("Distance Traveled: %f", super.distance);
+        System.out.printf("\nAltitude: %f\n\n", super.altitude);
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Jetplane.java
+///////////////////////////////////////////////////////////////////////////////////////////
+
+public class JetPlane extends Object
+{
+    public JetPlane()
+    {
+        super();
+    }
+     public void PrintStatus()
+    {
+        System.out.print("JetPlane\n");
+        System.out.printf("Distance Traveled: %f", super.distance);
+        System.out.printf("\nAltitude: %f\n\n", super.altitude);
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Missile.java
+///////////////////////////////////////////////////////////////////////////////////////////
+
+public class Missile extends Object 
+{
+    public Missile()
+    {
+        super();
+    }
+    
+    public void PrintStatus()
+    {
+        System.out.print("Missile\n");
+        System.out.printf("Distance Traveled: %f", super.distance);
+        System.out.printf("\nAltitude: %f\n\n", super.altitude);
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Superman.java
+///////////////////////////////////////////////////////////////////////////////////////////
+
+public class Superman extends Object 
+{
+    public Superman()
+    {
+        super();
+    }
+    
+    public void PrintStatus()
+    {
+        System.out.print("Superman\n");
+        System.out.printf("Distance Traveled: %f", super.distance);
+        System.out.printf("\nAltitude: %f\n\n", super.altitude);
+    }
+}
