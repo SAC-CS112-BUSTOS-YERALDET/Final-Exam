@@ -1,1 +1,72 @@
+// Final.java
+
+
+import java.util.*;
+
+
+public class Final 
+{
+
+    
+    
+    
+    
+    public static void main(String[] args) 
+    {
+       Object bird = new Object();
+       Object airplane = new Object();
+       Object jetplane = new Object();
+       Object missile = new Object();
+       Object superman = new Object();
+       
+       
+       bird.SetAirSpeed(10);
+       bird.SetAltimeter(3);
+       
+       airplane.SetAirSpeed(450);
+       airplane.SetAltimeter(50);
+       
+       jetplane.SetAirSpeed(1000);
+       jetplane.SetAltimeter(120);
+       
+       missile.SetAirSpeed(2500);
+       missile.SetAltimeter(800);
+       
+       superman.SetAirSpeed(3500);
+       superman.SetAltimeter(500);
+       
+       for(int i = 1; i < 31; i++)
+       {
+           bird.Fly();
+           airplane.Fly();
+           jetplane.Fly();
+           missile.Fly();
+           superman.Fly();
+           
+           if( i % 5 == 0 )
+           {
+               System.out.printf("After %d minutes...\n\n", i);
+               System.out.print("Bird\n");
+               bird.PrintStatus();
+               
+               System.out.print("Airplane\n");
+               airplane.PrintStatus();
+               
+               System.out.print("Jetplane\n");
+               jetplane.PrintStatus();
+               
+               System.out.print("Missile\n");
+               missile.PrintStatus();
+               
+               System.out.print("Superman\n");
+               superman.PrintStatus();
+               
+           }
+           
+       }
+       
+       
+    }
+    
+}
 
