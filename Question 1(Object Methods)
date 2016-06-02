@@ -26,6 +26,13 @@ public class Object
         distance += (speed / 60);
         altitude += elevation;
     }
+    
+    public void PrintStatus()
+    {
+        System.out.printf("Distance Traveled: %0.1f", distance);
+        System.out.printf("Altitude: %0.1f", altitude);
+        
+    }
 
 
 }
