@@ -4,10 +4,10 @@
 
 public class Object 
 {
-    public int speed;
-    public int elevation;
-    public double distance = 0.0;
-    public double altitude = 0.0;
+    protected int speed;
+    protected int elevation;
+    protected double distance = 0.0;
+    protected double altitude = 0.0;
 
     public Object()
     {
@@ -24,19 +24,13 @@ public class Object
     {
         elevation = elevationPerMinute;
     }
-
+    
     public void Fly() // 1 minute of flight.
     {
-        distance += (speed / 60);
+        distance += ((double)speed / 60.0);
         altitude += elevation;
     }
     
-    public void PrintStatus()
-    {
-        System.out.printf("Distance Traveled: %0.1f", distance);
-        System.out.printf("Altitude: %0.1f", altitude);
-        
-    }
 
 
 }
